@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AddComponent } from './components/add/add.component';
+import { SearchComponent } from './components/search/search.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddComponent
+    AddComponent,
+    SearchComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule
