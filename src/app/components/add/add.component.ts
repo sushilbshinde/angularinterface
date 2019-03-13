@@ -26,7 +26,7 @@ export class AddComponent implements OnInit {
     this.addEvt.emit(tempItem);
     this.showForm = !this.showForm;
   }
-  constructor() { 
+  constructor() {
     this.showForm = true;
   }
 
