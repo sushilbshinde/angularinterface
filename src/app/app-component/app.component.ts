@@ -12,9 +12,13 @@ library.add(faTimes, faPlus);
 })
 export class AppComponent implements OnInit{
   title = 'Wisdom Pet Medicine';
-  theList:object[];
+  theList: object[];
 
-  deleteApt(theApt:object){
+  addApt(theApt: object){
+    this.theList.unshift(theApt);
+  }
+
+  deleteApt(theApt: object){
     this.theList = without(this.theList, theApt);
   }
 
