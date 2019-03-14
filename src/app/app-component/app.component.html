@@ -9,6 +9,8 @@
           ></app-add>
           <app-search
           (queryEvt)="searchApt($event)"
+          [orderBy]="orderBy"
+          [orderType]="orderType"
           ></app-search>
           <app-list 
             [aptList]="modifiedList"
