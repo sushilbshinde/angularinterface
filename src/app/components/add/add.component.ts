@@ -20,9 +20,6 @@ export class AddComponent implements OnInit {
       aptDate: formInfo.aptDate + ' ' + formInfo.aptTime,
       aptNotes: formInfo.aptNotes,
     };
-
-    console.log(tempItem);
-
     this.addEvt.emit(tempItem);
     this.showForm = !this.showForm;
   }
